@@ -1,0 +1,11 @@
+syntax = "proto3";
+package example;
+//  person 会生成 Person 命名的结构体
+message person {
+                    int32 id = 1;
+                    string name = 2;
+}
+//  all_person 会按照驼峰规则自动生成名为AllPerson 的结构体
+message all_person {
+                        repeated person Per = 1;
+}
